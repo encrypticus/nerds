@@ -3,10 +3,347 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page">
+
+<div class="page__wrapper">
+    <div class="page__container">
+        <header class="main-header">
+
+            <nav class="main-navigation">
+
+                <a class="site-logo" href="#">
+                    <img src="img/png/nerds-logo.png" width="160" height="65" alt="На главную" title="На главную">
+                </a>
+
+                <ul class="main-navigation__menu">
+                    <li class="main-navigation__item main-navigation__item--item-current">
+                        <a class="main-navigation__link" href="#">Студия</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Клиенты</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="catalog.html">Магазин</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+
+                <a href="#" class="basket main-navigation__link">
+                    <svg class="basket__img" id="icon-cart" width="15px" height="15px">
+                        <circle cx="4.5" cy="13.5" r="1.5"></circle>
+                        <circle cx="12.5" cy="13.5" r="1.5"></circle>
+                        <path d="M15 2H4l-.4-2H0v2h2l2 9h11V9H9.4L15 7z"></path>
+                    </svg>
+                    <span class="basket__text">Корзина</span>
+                </a>
+            </nav>
+
+        </header>
+
+        <div class="main-page__outer-slider-wrapper">
+
+            <div class="main-page__inner-slider-wrapper">
+
+                <section class="slider">
+                    <h2 class="visually-hidden">Слайдер</h2>
+                    <div class="slider__about">
+                        <h1 class="slider__slogan slider__slogan--small">Долго, дорого, скурпулезно</h1>
+                        <p class="slider__principles">Математически выверенный дизайн<br>для вашего сайта или мобильного
+                            приложения</p>
+                        <a class="button button--red" href="#">Узнать больше</a>
+                    </div>
+                    <div class="slider__img-wrapper slider__img-wrapper--positioned">
+                        <h2 class="visually-hidden">Слайды</h2>
+                        <img class="slider__img" src="img/png/slide1.png" width="698" height="413" alt="Слайд 1">
+                    </div>
+                </section>
+
+                <section class="slider">
+                    <h2 class="visually-hidden">Слайдер</h2>
+                    <div class="slider__about">
+                        <h1 class="slider__slogan slider__slogan--large">Любим математику как никто другой</h1>
+                        <p class="slider__principles">Никакого креатива, только математические формулы<br>для расчета
+                            идеальных пропорций</p>
+                        <a class="button button--red" href="#">Узнать больше</a>
+                    </div>
+                    <div class="slider__img-wrapper">
+                        <h2 class="visually-hidden">Слайды</h2>
+                        <img class="slider__img" src="img/png/slide2.png" width="663" height="430" alt="Слайд 2">
+                    </div>
+                </section>
+
+                <section class="slider">
+                    <h2 class="visually-hidden">Слайдер</h2>
+                    <div class="slider__about">
+                        <h1 class="slider__slogan slider__slogan--middle">Только ночь, только хардкор</h1>
+                        <p class="slider__principles">Работать днем, как все? Мы против этого.<br>Ближе к полуночи
+                            работа только начинается</p>
+                        <a class="button button--red" href="#">Узнать больше</a>
+                    </div>
+                    <div class="slider__img-wrapper">
+                        <h2 class="visually-hidden">Слайды</h2>
+                        <img class="slider__img" src="img/png/slide3.png" width="759" height="411" alt="Слайд 3">
+                    </div>
+                </section>
+
+                <ul class="slider-control-buttons">
+                    <li class="slider-control-buttons__item">
+                        <button type="button" class="slider-control-buttons__button slider-control-buttons__button--active">
+                            <span class="visually-hidden">Слайд 1</span>
+                        </button>
+                    </li>
+                    <li class="slider-control-buttons__item">
+                        <button class="slider-control-buttons__button" type="button">
+                            <span class="visually-hidden">Слайд 2</span>
+                        </button>
+                    </li>
+                    <li class="slider-control-buttons__item">
+                        <button class="slider-control-buttons__button" type="button">
+                            <span class="visually-hidden">Слайд 3</span>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<main>
+    <div class="page__container">
+
+        <section class="products">
+            <h2 class="visually-hidden products__heading">Наши продукты</h2>
+
+            <ul class="products__list">
+                <li class="products__item">
+                    <p class="products__img">
+                        <a class="products__link" href="#">
+                            <img class="products__image" src="img/png/illustration-1.png" width="300" height="146" alt="Веб-сайты">
+                        </a>
+                    </p>
+                    <h3 class="products__title">Веб-сайты</h3>
+                    <p class="products__info">
+                        Мир никогда не будет прежним<br>после того, как вы увидите наш сайт
+                    </p>
+                    <p class="products__button">
+                        <a href="#" class="button button--red products__btn">Заказать</a>
+                    </p>
+                </li>
+
+                <li class="products__item">
+                    <p class="products__img">
+                        <a class="products__link" href="#">
+                            <img class="products__image" src="img/png/illustration-2.png" width="300" height="146" alt="Приложения">
+                        </a>
+                    </p>
+                    <h3 class="products__title">Приложения</h3>
+                    <p class="products__info">
+                        Покорите топ-10 приложений в<br>AppStore и Google Play
+                    </p>
+                    <p class="products__button">
+                        <a href="#" class="button button--green products__btn">Заказать</a>
+                    </p>
+                </li>
+
+                <li class="products__item">
+                    <p class="products__img">
+                        <a class="products__link" href="#">
+                            <img class="products__image" src="img/png/illustration-3.png" width="300" height="146" alt="Презентации">
+                        </a>
+                    </p>
+                    <h3 class="products__title">Презентации</h3>
+                    <p class="products__info">
+                        Вы даже не подозреваете,<br>насколько вы изумительны!
+                    </p>
+                    <p class="products__button">
+                        <a href="#" class="button button--yellow products__btn">Заказать</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="advantage-wrapper">
+            <section class="advantages">
+                <h2 class="visually-hidden">Наши преимущества</h2>
+                <div class="advantages__slogan">
+                    Мы - маленькая, но гордая дизайн-студия из Краснодара.
+                </div>
+                <p class="advantages__principles">
+                    Исповедуем принципы минимализма и чистоты. Ставим математический рассчет превыше креатива.
+                    Работаем не покладая рук, как роботы.
+                </p>
+                <h3 class="text advantages__orders">Выполняем заказы на разработку:</h3>
+                <ul class="advantages__order-list">
+                    <li class="advantages__order-item">Веб-сайты любой сложности</li>
+                    <li class="advantages__order-item">Мобильных приложений для iOS и Android</li>
+                    <li class="advantages__order-item advantages__order-item--last">Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </section>
+
+            <section class="presentation">
+                <h2 class="visually-hidden">Наши ценности</h2>
+                <p class="presentation__img">
+                    <img class="presentation__image" src="img/png/explosion.png" width="360" height="208" alt="Маленькая, но гордая дизайн-студия">
+                </p>
+                <h3 class="text presentation__title">С 2004 года любим точность во всем:</h3>
+                <table class="table-presentation presentation__table">
+                    <tr class="table-presentation__row">
+                        <th class="table-presentation__title">146<span class="table-presentation__percent">%</span></th>
+                        <th class="table-presentation__title">100<span class="table-presentation__percent">%</span></th>
+                        <th class="table-presentation__title table-presentation__title--last">50<span class="table-presentation__percent">%</span></th>
+                    </tr>
+                    <tr class="table-presentation__row">
+                        <td class="table-presentation__column">Уровень самоотдачи</td>
+                        <td class="table-presentation__column">Соблюдение сроков</td>
+                        <td class="table-presentation__column">Минимальная предоплата</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <section class="clients">
+            <h2 class="visually-hidden">Наши работы</h2>
+
+            <ul class="clients__list">
+                <li class="clients__item clients__item--bordered">
+                    <a class="clients__link" href="#">
+                        <img class="clients__img" src="img/png/academy.png" width="199" height="68" alt="HTML Академия">
+                    </a>
+                </li>
+
+                <li class="clients__item clients__item--bordered">
+                    <a class="clients__link" href="#">
+                        <img class="clients__img" src="img/png/borodinski.png" width="209" height="87" alt="Барбершоп Бородинский">
+                    </a>
+                </li>
+
+                <li class="clients__item clients__item--bordered">
+                    <a class="clients__link" href="#">
+                        <img class="clients__img" src="img/png/pink.png" width="185" height="52" alt="Pink">
+                    </a>
+                </li>
+
+                <li class="clients__item">
+                    <a class="clients__link" href="#">
+                        <img class="clients__img" src="img/png/mishka.png" width="173" height="84" alt="Мишка">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+    </div>
+
+    <section class="map">
+        <h2 class="visually-hidden">Как нас найти</h2>
+
+        <div class="page__container page__container--map">
+            <div class="contact-us">
+                <h3 class="contact-us__title">nёrds design studio</h3>
+                <div class="contact-us__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</div>
+                <div class="contact-us__tel">тел. +7 (812) 275-75-75</div>
+                <a class="button button--red contact-us__button" href="#">Напишите нам</a>
+            </div>
+            <div class="contact-us__marker">
+                <img class="contact-us__img" src="img/png/map-marker.png" width="231" height="190" alt="Маркер">
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461577051!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2skz!4v1542461815513" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+    </section>
+
+</main>
+
+<footer class="main-footer page__container">
+
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-button social-list__button" href="#">
+
+                    <span class="visually-hidden">Вконтакте</span>
+
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+                        <path class="social-button__icon" fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+                        c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+                        c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+                        c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+                        c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+                        c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+                        s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+                        C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+                        s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+                        c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"/>
+                    </svg>
+
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a href="#" class="social-button social-list__button">
+                    <span class="visually-hidden">Фэйсбук</span>
+                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve"><path class="social-button__icon" fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/></svg>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a href="#" class="social-button social-list__button">
+
+                    <span class="visually-hidden">Инстаграмм</span>
+
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+                        <path class="social-button__icon" fill="#FFFFFF" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
+                        c1.93,0,3.5,1.57,3.5,3.5S12.43,14,10.5,14S7,12.43,7,10.5S8.57,7,10.5,7z M18,18H3V9h1.181C4.067,9.482,4,9.983,4,10.5
+                        c0,3.59,2.91,6.5,6.5,6.5s6.5-2.91,6.5-6.5c0-0.517-0.066-1.018-0.181-1.5H18V18z M18,7h-4V3h4V7z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+    <div class="advertising main-footer__advertising">
+        <p class="advertising__sentence">Давайте дружить, это выгодно!</p>
+        <b class="advertising__discount">Скидка 10% для друзей из социальных сетей</b>
+    </div>
+</footer>
+
+<section class="modal modal--form">
+    <h2 class="modal__title">Напиште нам</h2>
+    <form action="" class="modal-form">
+        <div class="modal-form__fieldset">
+            <p class="modal-form__name-wrapper">
+                <label class="modal-form__label" for="name">Ваше имя:</label>
+                <input class="modal-form__input modal-form__input--name" type="text" name="name" id="name" placeholder="Имя Фамилия">
+            </p>
+
+            <p class="modal-form__mail-wrapper">
+                <label class="modal-form__label" for="email">Ваш e-mail</label>
+                <input class="modal-form__input modal-form__input--required" type="email" name="email" id="email" placeholder="example@.com" required>
+            </p>
+
+            <p class="modal-form__letter-wrapper">
+                <label class="modal-form__label" for="letter-text">Текст письма:</label>
+                <textarea class="modal-form__letter-text" name="letter-text" id="letter-text" placeholder="В свободной форме"></textarea>
+            </p>
+        </div>
+
+        <button type="submit" class="button button--red modal-form__button">Отправить</button>
+    </form>
+    <button type="button" class="modal__button-close"><span class="visually-hidden">Закрыть форму</span></button>
+</section>
+
+<div class="overlay"></div>
+
+<script src="scripts/classes/APPNerds.js"></script>
+<script src="scripts/main.js"></script>
 
 </body>
 </html>
